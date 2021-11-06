@@ -3,18 +3,26 @@ import uuid from 'uuid/v4';
 import historyController from '../../controllers/historyController';
 
 const WebhookContainer = (props) => {
+  const test = function () {
+    console.log("help us");
+  };
+
   //button to generate URL
   //button to start sever
   //figure out how to listen to the webhook
   return (
     <div>
-      <button className="button is-wh">Start/Close Server</button>
+      <button
+        className="button is-wh"
+        onClick={(e) => {
+          test(e);
+        }}
+      >
+        Start/Close Server
+      </button>
       <button className="button is-wh">Generate URL</button>
-      hi JACOB!!!                           
-      Yes Jen, suck on that 8============D  
-      Show me  u   r toes                   
-     </div>
-  )
+    </div>
+  );
 }
 
 export default WebhookContainer;
